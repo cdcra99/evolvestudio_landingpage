@@ -1,0 +1,384 @@
+/* Geral */
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Isto evita qualquer excesso horizontal */
+}
+
+
+.navbar {
+    width: 100%;
+}
+
+/* Altera a cor de hover para os links da navbar */
+.navbar-nav .nav-link:hover {
+    color: #688fc8 !important; /* Cor quando o link estiver em hover */
+}
+
+/* Altera também a cor quando o link estiver ativo ou selecionado */
+.navbar-nav .nav-link.active {
+    color: #688fc8 !important; /* Cor para o link ativo */
+}
+
+/* Se precisar ajustar o foco também */
+.navbar-nav .nav-link:focus {
+    color: #688fc8 !important; /* Cor quando o link estiver focado */
+}
+
+@media (max-width: 768px) {
+    .navbar-collapse {
+        justify-content: center;
+    }
+}
+
+header.masthead {
+    position: relative; /* Define o contexto de posicionamento para o banner */
+}
+
+.masthead-heading {
+    font-size: 3.5rem !important;
+    position: relative !important; /* Define o contexto de posicionamento para o banner */
+    bottom: 45px !important;
+}
+
+.masthead-subheading {
+    font-size: 2rem !important;
+    position: relative !important; /* Define o contexto de posicionamento para o banner */
+    bottom: 60px !important;
+}
+
+
+@media (max-width: 992px) {
+    .masthead-heading {
+        font-size: 3.25rem !important;
+        position: relative !important; /* Define o contexto de posicionamento para o banner */
+        bottom: 35px !important;
+    }
+    
+    .masthead-subheading {
+        font-size: 1.5rem !important;
+        position: relative !important; /* Define o contexto de posicionamento para o banner */
+        bottom: 70px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .masthead-heading {
+        font-size: 2.5rem !important;
+        position: relative !important; /* Define o contexto de posicionamento para o banner */
+        bottom: 25px !important;
+    }
+    
+    .masthead-subheading {
+        font-size: 1.1rem !important;
+        position: relative !important; /* Define o contexto de posicionamento para o banner */
+        bottom: 50px !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .masthead-heading {
+        font-size: 2rem !important;
+        position: relative !important; /* Define o contexto de posicionamento para o banner */
+        bottom: 25px !important;
+    }
+    
+    .masthead-subheading {
+        font-size: 1rem !important;
+        position: relative !important; /* Define o contexto de posicionamento para o banner */
+        bottom: 50px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .masthead-heading {
+        font-size: 1.7rem !important;
+    }
+    
+    .masthead-subheading {
+        font-size: 0.9rem !important;
+    }
+}
+
+@media (max-width: 430px) {
+    .masthead-heading {
+        font-size: 1.5rem !important;
+    }
+    
+    .masthead-subheading {
+        font-size: 0.8rem !important;
+    }
+}
+
+@media (max-width: 385px) {
+    .masthead-heading {
+        font-size: 1.3rem !important;
+    }
+    
+    .masthead-subheading {
+        font-size: 0.7rem !important;
+    }
+}
+
+@media (max-width: 335px) {
+    .masthead-heading {
+        font-size: 1.1rem !important;
+    }
+    
+    .masthead-subheading {
+        font-size: 0.6rem !important;
+    }
+}
+
+@media (max-width: 295px) {
+    .masthead-heading {
+        font-size: 1rem !important;
+    }
+    
+    .masthead-subheading {
+        font-size: 0.5rem !important;
+    }
+}
+
+
+/* Estilos do banner do WhatsApp */
+#whatsapp-banner {
+    background-color: #688fc8; /* Cor de fundo do banner */
+    display: flex;
+    flex-direction: column; /* Alinha o texto acima da imagem */
+    justify-content: center; /* Centraliza o conteúdo */
+    align-items: center; /* Centraliza horizontalmente */
+    width: 100%; /* Preenche toda a largura do header */
+    height: 110px; /* Altura do banner */
+    margin: 0; /* Remove a margem */
+    padding: 10px 0; /* Espaçamento interno */
+    text-decoration: none; /* Remove o sublinhado */
+    position: absolute; /* Absoluto, mas relativo ao header */
+    bottom: 0; /* Fixa o banner no final do header */
+    left: 0; /* Começa a partir da borda esquerda */
+    box-sizing: border-box; /* Inclui padding e border no cálculo de largura/altura */
+    z-index: 10; /* Garante que o banner fique acima de outros conteúdos do header */
+}
+
+#whatsapp-banner img {
+    height: 45px; /* Tamanho da imagem do ícone */
+    position: relative !important;
+    bottom: 6px !important; /* Ajusta a posição da imagem */
+}
+
+#whatsapp-text {
+    font-size: 1rem; /* Tamanho do texto */
+    color: white; /* Cor do texto */
+    margin: 0 0 5px 0; /* Margem inferior */
+    text-align: center; /* Centraliza o texto */
+}
+
+@media (max-width: 385px) {
+    #whatsapp-banner img {
+        height: 35px !important; /* Tamanho da imagem do ícone */
+        position: relative !important;
+        bottom: 6px !important; /* Ajusta a posição da imagem */
+    }
+    
+    #whatsapp-text {
+        font-size: 0.9rem; /* Tamanho do texto */
+        color: white; /* Cor do texto */
+        margin: 0 0 5px 0; /* Margem inferior */
+        text-align: center; /* Centraliza o texto */
+    }
+}
+
+/* Media query para telas menores que 768px */
+@media (max-width: 576px) {
+    #whatsapp-banner {
+        height: 70px !important; /* Reduz a altura do banner para telas pequenas */
+        padding: 6px 0; /* Ajuste do espaçamento interno */
+    }
+}
+
+/* Media query para telas menores que 768px */
+@media (max-width: 768px) {
+    #whatsapp-banner {
+        height: 80px !important; /* Reduz a altura do banner para telas pequenas */
+        padding: 6px 0; /* Ajuste do espaçamento interno */
+    }
+
+    #whatsapp-banner img {
+        height: 35px; /* Reduz o tamanho do ícone */
+    }
+}
+
+#carossel_reviews img{
+    width: 100px !important; /* Defina o tamanho desejado */
+    height: 100px !important; /* A altura deve ser igual à largura para garantir o círculo */
+    object-fit: cover !important; /* Garante que a imagem se encaixe corretamente sem distorção */
+    border-radius: 50% !important; /* Transforma a imagem em um círculo */
+    display: block !important; /* Evita qualquer comportamento inesperado de alinhamento */
+    margin: 0 auto !important; /* Centraliza a imagem */
+}
+
+#carossel_reviews .card-title{
+    margin-top: 14px !important;
+}
+
+/* Estilos gerais para o carrossel */
+.carousel-inner img {
+    width: 100%; /* A largura da imagem preenche sempre o container */
+    height: 95vh !important;
+    object-fit: cover; /* Mantém a proporção da imagem e cobre o espaço */
+}
+
+/* Centraliza o texto e melhora a responsividade */
+.carousel-caption {
+    position: absolute;
+    top: 38%; /* Ajusta a posição para garantir centralização */
+    left: 50%;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    max-width: 90%;
+}
+
+/* Tamanho de fonte para telas grandes */
+.carousel-caption > h5 {
+    font-size: 2rem; /* Tamanho grande para títulos */
+}
+
+.carousel-caption > p {
+    font-size: 1.5rem; /* Tamanho grande para o parágrafo */
+}
+
+/* Media query para telas menores que 768px (tablets) */
+@media (max-width: 1000px) {
+    .carousel-inner img {
+        height: 60vh !important; /* Ajusta a altura da imagem */
+    }
+
+    .carousel-caption {
+        top: 35% !important; /* Ajusta a posição do texto */
+    }
+
+    .carousel-caption > h5 {
+        font-size: 1.5rem !important; /* Diminui o tamanho do título */
+    }
+
+    .carousel-caption > p {
+        font-size: 1.2rem !important; /* Diminui o tamanho do parágrafo */
+    }
+}
+
+/* Media query para telas menores que 768px (tablets) */
+@media (max-width: 768px) {
+    .carousel-inner img {
+        height: 60vh !important; /* Ajusta a altura da imagem */
+    }
+
+    .carousel-caption {
+        top: 35% !important; /* Ajusta a posição do texto */
+    }
+
+    .carousel-caption > h5 {
+        font-size: 1.2rem !important; /* Diminui o tamanho do título */
+    }
+
+    .carousel-caption > p {
+        font-size: 1rem !important; /* Diminui o tamanho do parágrafo */
+    }
+}
+
+/* Media query para telas menores que 576px (smartphones) */
+@media (max-width: 576px) {
+    .carousel-inner img {
+        height: 50vh; /* Ajusta a altura da imagem em telas menores */
+    }
+
+    .carousel-caption {
+        top: 35% !important; /* Ajusta a posição do texto para não ficar sobrecarregado */
+        padding: 10px !important;
+    }
+
+    .carousel-caption > h5 {
+        font-size: 1rem !important; /* Reduz o tamanho do título */
+    }
+
+    .carousel-caption > p {
+        font-size: 0.95rem !important; /* Reduz o tamanho do parágrafo */
+    }
+}
+
+/* Media query para telas ainda menores que 576px */
+@media (max-width: 400px) {
+    .carousel-inner img {
+        height: 40vh; /* Ajusta a altura para 40% da viewport */
+    }
+
+    .carousel-caption {
+        top: 35%; /* Ajusta a posição do texto */
+    }
+
+    .carousel-caption > h5 {
+        font-size: 0.9rem !important; /* Reduz ainda mais o tamanho do título */
+    }
+
+    .carousel-caption > p {
+        font-size: 0.8rem !important; /* Diminui o tamanho do parágrafo */
+    }
+}
+
+
+.timeline > li .timeline-image {
+    background-color: #688fc8 !important;
+}
+
+.team-member.primeiro_membro > img {
+    border: 0.5rem solid #688fc8 !important;
+}
+
+/* Styling for the Hours and Map Section */
+#horario .info-box {
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilização da área do mapa com proporção quadrada */
+#horario .map-box {
+    position: relative;
+    width: 100%; /* A caixa vai preencher 100% da largura disponível */
+    padding-bottom: 100%; /* Define a altura para manter a proporção 1:1 (quadrado) */
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* O iframe vai ocupar a totalidade do espaço */
+#horario .map-box iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    border-radius: 8px;
+}
+
+#horario .section-heading {
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#horario .text-muted {
+    font-size: 18px;
+}
+
+
+.clock-icon {
+    color: #688fc8 !important; /* Ensure the color change is applied */
+}
+
+footer {
+    color: white;
+}
